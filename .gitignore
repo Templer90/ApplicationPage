@@ -1,0 +1,7 @@
+#Ignore IDE Files
+.git/*
+.idea/*
+
+#Ignore Generated Sites
+_site/*
+.jekyll-cache/*
