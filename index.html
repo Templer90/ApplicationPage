@@ -15,7 +15,7 @@ title: Eric Heinz
 			<span class="span_info"> {{ person.address }}<br> {{ person.town }}, Germany</span>
 		</div>
 		<div><span class="span_title">Languages:</span><span class="span_info"> {{ person.spoken_languages | join: ", " }}</span></div>
-		<div><span class="span_title">Telephone:</span><span class="span_info"> {{ person.telephone }}</span></div>
+		<div><span class="span_title">Telephone:</span><a href="tel: +{{ person.telephone | remove: '-' | remove: ' ' }}">{{ person.telephone }}</a></div>
 		<div><span class="span_title">E-Mail:</span><a href="mailto:{{ site.data.person.email }}">{{ person.email }}</a></div>
 	</div>
 
