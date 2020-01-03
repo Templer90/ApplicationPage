@@ -1,0 +1,36 @@
+{% assign index = 0 %}
+{% assign lastRow = include.rows | minus: 1 %}
+{% if include.class %}
+{% assign class = include.class %}
+{% else %}
+{% assign class = "talent" %}
+{% endif %}
+
+
+
+{% for occurence in include.content %}
+    {% if index == 0 %} 
+        <ul class="{{ class }}"> 
+    {% endif %}
+
+    {% if index == lastRow %}
+        <li class="last">{{ occurence }}</li>
+    {% else %}
+        <li>{{ occurence }}</li>
+    {% endif %}
+    
+    {% if index == lastRow %}
+        {% assign index = 0 %}</ul>
+    {% else %}
+        {% assign index = index | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% for j in (index..lastRow) %}
+    {% if j == lastRow %}
+        <li class="last"></li></ul>
+    {% else %}
+        <li></li>
+    {% endif %}
+{% endfor %}
+

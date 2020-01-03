@@ -1,7 +1,7 @@
 {
   "languages": [
     {
-      "title": "Proficient in: ",
+      "title": "Proficient in",
       "data": [
         "PHP",
         "C#",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "title": "Knowledge of: ",
+      "title": "Knowledge of",
       "data": [
         "C/C++",
         "Python",
@@ -20,20 +20,25 @@
         "Linux",
         "MySQL",
         "Docker",
-        "Jekyll"
+        "Jekyll",
+        "Unix",
+        "Lua",
+        "Haskel"
       ]
     },
     {
-      "title": "Frameworks: ",
+      "title": "Frameworks",
       "data": [
         "Yii2",
         "Unity",
-        "Processing",
         "Behat"
       ]
     }
   ],
   "misc": [
-    {}
+    {
+      "title": "Softskills: ",
+      "data": ["I'm used to work in Teams","Likes IntelliJ IDEA", "Prefers Vim"]
+    }
   ]
 }

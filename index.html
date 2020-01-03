@@ -22,23 +22,14 @@ title: Eric Heinz
 	<h2>University</h2>
 	<div class="contend university">
 		{% for obj in university %}
-		<div>
-			<span class="span_title">{{ obj.title }}</span>
-			<span class="span_info"> 
-			{% if  obj.data.first %}
-				{{ obj.data | join: "<br>" }}
-			{% else %}
-				{{ obj.data }}
-			{% endif %}
-			</span>
-		</div>
+        {% include cv_line.html content=obj %}
 		{% endfor %}
 	</div>
 
 	<h2>Programming</h2>
 	<div class="contend programming">
 		{% for obj in programming.languages %}
-		<div><span class="span_title">{{ obj.title }}</span><span class="span_info"> {{ obj.data | join: "<br>" }}</span></div>
+        {% include cv_line.html content=obj %}
 		{% endfor %}
 	</div>
 

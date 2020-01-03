@@ -1,0 +1,10 @@
+<div>
+    <span class="span_title">{{ include.content.title }}</span>
+    <span class="span_info"> 
+			{% if include.content.data.first %}
+				{{ include.content.data | join: "<br>" }}
+			{% else %}
+				{{ include.content.data }}
+			{% endif %}
+			</span>
+</div>
