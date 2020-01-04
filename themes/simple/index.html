@@ -1,0 +1,48 @@
+---
+layout: default
+title: Eric Heinz
+---
+{% assign programming = site.data.programming %}
+{% assign person = site.data.person %}
+{% assign university = site.data.university %}
+<div class="cv">
+	<a href="/downloads/CV.pdf" class="download" title="Download CV as PDF">Download CV</a>
+	<h1>{{person.name}} {{person.lastname}}</h1>
+	<div class="contend bio">
+		<div><span class="span_title">Full Name:</span><span class="span_info">{{ person.fullname }}</span></div>
+		<div><span class="span_title">Birthday:</span><span class="span_info"> {{ person.birthday }}</span></div>
+		<div><span class="span_title">Adress:</span>
+			<span class="span_info"> {{ person.address }}<br> {{ person.town }}, Germany</span>
+		</div>
+		<div><span class="span_title">Languages:</span><span class="span_info"> {{ person.spoken_languages | join: ", " }}</span></div>
+		<div><span class="span_title">Telephone:</span><a href="tel: +{{ person.telephone | remove: '-' | remove: ' ' }}">{{ person.telephone }}</a></div>
+		<div><span class="span_title">E-Mail:</span><a href="mailto:{{ site.data.person.email }}">{{ person.email }}</a></div>
+	</div>
+
+	<h2>University</h2>
+	<div class="contend university">
+		{% for obj in university %}
+        {% include cv_line.html content=obj %}
+		{% endfor %}
+	</div>
+
+	<h2>Programming</h2>
+	<div class="contend programming">
+		{% for obj in programming.languages %}
+        {% include cv_line.html content=obj %}
+		{% endfor %}
+	</div>
+
+	<h2>Timeline</h2>
+	<div class="contend timeline">
+		{% for occurence in site.data.timeline %}
+		<div>
+			<span class="span_title">{{ occurence.start_date }} - {{ occurence.end_date }}</span><span class="span_info">{{ occurence.title }}
+				{% if occurence.info %}
+				<br>&emsp;{{ occurence.info }}
+				{% endif %}
+			</span>
+		</div>
+		{% endfor %}
+	</div>
+</div>

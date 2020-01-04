@@ -1,3 +1,6 @@
 name: Eric Heinz
 markdown: kramdown
+exclude:
+  - README.md
+  - themes/
 permalink: /blog/:year/:month/:day/:title
