@@ -1,0 +1,24 @@
+[
+  {
+    "start_date": "2016",
+    "end_date": "2020",
+    "title": "Junior (Backend) Developer bei NFON AG",
+    "info": "Backend API Entwicklung eines Cloud-basierten Telefonsystems bei NFON AG und pflege/entwicklung von internen Tools, sowie Testing mit Behat"
+  },
+  {
+    "start_date": "2014",
+    "end_date": "2015",
+    "title": "Fullstack Developer bei eTermio GmbH",
+    "info": "Fullstack (Frontend/Backend/DB) Entwicklung eines Online-Kalender-Systems bei eTermio GmbH"
+  },
+  {
+    "start_date": "2010",
+    "end_date": "2015",
+    "title": "Informatik Studium an der Gutenberg Universität Mainz"
+  },
+  {
+    "start_date": "2007",
+    "end_date": "2010",
+    "title": "Abitur an der Integrierte Gesamtschule Ingelheim"
+  }
+]

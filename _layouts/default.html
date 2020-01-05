@@ -2,24 +2,19 @@
 <html>
 <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="keywords" content="Application CV" />
+    <meta name="description" content="A Application Landingpage or CV for {{ page.title }}" />
+
+    <link rel="stylesheet" type="text/css" href="/css/reset-fonts-grids.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/css/resume.css" media="all" />
+
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/themes/">themed</a></li>
-    </ul>
-</nav>
-<div class="container">
+<div id="doc2" class="yui-t7">
     {{ content }}
-</div>
-<footer>
-    <ul>
-        <li><a href="{{ site.data.person.handels.email }}">email</a></li>
-        <li><a href="https://github.com/Templer90">github</a></li>
-        <li><a href="{{ site.data.person.handels.xing }}">Xing</a></li>
-    </ul>
-</footer>
+</div><!--// doc -->
 </body>
 </html>
+

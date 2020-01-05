@@ -1,0 +1,15 @@
+{
+  "experience": "Experience",
+  "university": "University",
+  "skills": "Skills",
+  "proficient" :"Proficient in",
+  "knowledge" : "Knowledge of",
+  "frameworks": "Frameworks",
+  "profile": "Profile",
+  "fullname":"Full Name",
+  "birthday":"Birthday",
+  "address":"Address",
+  "languages":"Languages",
+  "occupation": "Developer",
+  "view_this": "Language: "
+}
