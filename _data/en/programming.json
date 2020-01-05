@@ -1,0 +1,37 @@
+{
+  "proficient": [
+    "PHP",
+    "C#",
+    "JavaScript",
+    "Java",
+    "Behat/Gherkin"
+  ],
+  "knowledge": [
+    "C/C++",
+    "Python",
+    "HTML 5.0 / CSS",
+    "Bash",
+    "Linux",
+    "MySQL",
+    "Docker",
+    "Jekyll",
+    "Unix",
+    "Lua",
+    "Haskel"
+  ],
+  "frameworks": [
+    "Yii2",
+    "Unity",
+    "Behat"
+  ],
+  "misc": [
+    {
+      "title": "Softskills: ",
+      "data": [
+        "I'm used to work in Teams",
+        "Likes IntelliJ IDEA",
+        "Prefers Vim"
+      ]
+    }
+  ]
+}
