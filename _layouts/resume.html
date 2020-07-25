@@ -19,7 +19,8 @@ layout: default
 
             <div class="yui-u">
                 <div class="contact-info">
-                    <h3><a id="pdf" href="/downloads/CV- Eric Heinz.pdf" class="download" title="Download CV as PDF">Download PDF</a></h3>
+                    <h3><a id="pdf" href="/downloads/CV- Eric Heinz.pdf" class="download" title="Download CV as PDF">Download
+                        PDF</a></h3>
                     <h3><a href="mailto:{{person.email}}">{{person.email}}</a></h3>
                     <h3>{{ person.telephone }}</h3>
                     <h5>{{ topic.view_this }}<a href="/en/resume.html">EN</a> - <a href="/de/resume.html">DE</a></h5>
@@ -35,17 +36,17 @@ layout: default
                     <div class="yui-u first">
                         <h2>{{ topic.profile }}</h2>
                     </div>
-                    <div class="yui-u">
+                    <div class="yui-u" style="display: flex;">
                         <ul class="talent-2">
                             <li>{{ topic.fullname }}</li>
                             <li>{{ topic.birthday }}</li>
-                            <li>{{ topic.address }}</li>
+                            <li>{{ topic.address }}<br>&zwnj;</li>
                             <li class="last">{{ topic.languages }}</li>
                         </ul>
                         <ul class="talent-2">
                             <li>{{ person.fullname }}</li>
                             <li>{{ person.birthday }}</li>
-                            <li>{{ person.address }}, {{ person.town }}</li>
+                            <li>{{ person.address }},<br> {{ person.town }}</li>
                             <li class="last">{{ person.spoken_languages | join: ", " }}</li>
                         </ul>
                     </div>
@@ -96,7 +97,8 @@ layout: default
                     </div>
                     <div class="yui-u">
                         {% assign program = programming.knowledge %}
-                        {% include cv_table.html content=program rows="4" %}</div>
+                        {% include cv_table.html content=program rows="4" %}
+                    </div>
                 </div><!--// .yui-gf-->
 
                 <div class="yui-gf">
@@ -135,8 +137,9 @@ layout: default
     </div><!--// bd -->
 
     <div id="ft">
-        <p>{{person.name}} {{person.lastname}} &mdash; 	<a href="{{ person.handels.email }}">{{person.email}}</a> &mdash; {{ person.telephone }}</p>
-        <p>	<a href="https://github.com/Templer90">github</a> &mdash; 	<a href="{{ person.handels.xing }}">Xing</a></p>
+        <p>{{person.name}} {{person.lastname}} &mdash; <a href="{{ person.handels.email }}">{{person.email}}</a> &mdash;
+            {{ person.telephone }}</p>
+        <p><a href="https://github.com/Templer90">github</a> &mdash; <a href="{{ person.handels.xing }}">Xing</a></p>
     </div><!--// footer -->
 
 </div><!-- // inner -->
