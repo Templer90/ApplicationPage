@@ -7,6 +7,7 @@
     "Behat/Gherkin"
   ],
   "knowledge": [
+    "Go",
     "C/C++",
     "Python",
     "HTML 5.0 / CSS",
@@ -15,7 +16,6 @@
     "MySQL",
     "Docker",
     "Jekyll",
-    "Unix",
     "Lua",
     "Haskel"
   ],
@@ -23,6 +23,12 @@
     "Yii2",
     "Unity",
     "Behat"
+  ],
+  "other": [
+    "Virtual Reality",
+    "Retrocomputing",
+    "Theoretische Informatik",
+    "Simulationen"
   ],
   "misc": [
     {

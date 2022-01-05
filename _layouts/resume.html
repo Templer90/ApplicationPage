@@ -36,6 +36,7 @@ layout: default
                     <div class="yui-u first">
                         <h2>{{ topic.profile }}</h2>
                     </div>
+
                     <div class="yui-u" style="display: flex;">
                         <ul class="talent-2">
                             <li>{{ topic.fullname }}</li>
@@ -111,6 +112,16 @@ layout: default
                     </div>
                 </div><!--// .yui-gf-->
 
+                <div class="yui-gf">
+                    <div class="yui-u first">
+                        <h2>{{ topic.interests }}</h2>
+                    </div>
+                    <div class="yui-u">
+                        {% assign interest = programming.other %}
+                        {% include cv_table.html content=interest rows="1" %}
+                    </div>
+                </div><!--// .yui-gf-->
+
                 <div class="yui-gf last">
                     <div class="yui-u first">
                         <h2>{{ topic.experience }}</h2>
@@ -139,7 +150,8 @@ layout: default
     <div id="ft">
         <p>{{person.name}} {{person.lastname}} &mdash; <a href="{{ person.handels.email }}">{{person.email}}</a> &mdash;
             {{ person.telephone }}</p>
-        <p><a href="https://github.com/Templer90">github</a> &mdash; <a href="{{ person.handels.xing }}">Xing</a></p>
+        <p><a href="{{ person.handels.github }}">github</a> &mdash; <a href="{{ person.handels.linkedin }}">linkedin</a>
+        </p>
     </div><!--// footer -->
 
 </div><!-- // inner -->
