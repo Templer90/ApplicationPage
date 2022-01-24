@@ -1,7 +1,13 @@
 [
   {
-    "start_date": "2016",
+    "start_date": "2020",
     "end_date": "Heute",
+    "title": "(Backend) Developer bei NFON AG",
+    "info": "Haupt Backend Entwickler eines Cloud-basierten Telefonsystems und pflege/entwicklung/testung von internen Tools und Apis."
+  },
+  {
+    "start_date": "2016",
+    "end_date": "2020",
     "title": "(Backend) Developer bei NFON AG",
     "info": "Backend API Entwicklung eines Cloud-basierten Telefonsystems bei NFON AG und pflege/entwicklung von internen Tools, sowie Testing mit Behat"
   },
