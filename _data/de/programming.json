@@ -2,12 +2,12 @@
   "proficient": [
     "PHP",
     "C#",
+    "Go",
     "JavaScript",
     "Java",
     "Behat/Gherkin"
   ],
   "knowledge": [
-    "Go",
     "C/C++",
     "Python",
     "Bash",
